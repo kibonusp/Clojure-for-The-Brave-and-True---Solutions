@@ -57,6 +57,7 @@
     :check-glitter #(not(nil? (:glitter-index %)))
 })
 
+
 (defn validate
     ([validators record]
         (validate validators record true)
