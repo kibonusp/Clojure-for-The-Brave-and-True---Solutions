@@ -1,7 +1,6 @@
 (ns chapter-7.core
     (:gen-class))
 
-
 (defn invert-number
     [number]
     (- number (* 2 number))
@@ -9,16 +8,7 @@
 
 (defn vector->list
     [vector]
-    (reverse (reduce
-        (fn [l v]
-            (conj l (if (vector? v)
-                (vector->list v)
-                v
-            ))
-        )
-        '()
-        vector
-    ))
+    (reverse (reduce (fn [l v] (conj l (if (vector? v) (vector->list v) v))) '() vector))
 )
 
 (defn infixMath
