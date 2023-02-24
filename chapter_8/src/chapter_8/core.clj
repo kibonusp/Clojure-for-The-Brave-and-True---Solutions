@@ -85,8 +85,7 @@
         )
         '()
         (partition 2 function-list)
-    ))
-            
+    ))  
 )
 
 (defn -main
@@ -118,4 +117,5 @@
               c-dex :dexterity)
 
     (println (c-dex character))
+    (println (infix (1 + 2)))
 )

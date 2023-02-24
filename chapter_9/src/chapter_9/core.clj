@@ -121,7 +121,7 @@
     (println)
 
     ; Question 3
-    (println (get-all-results-from-pages "clojure" "powells" "cultura"))
+    (println (get-all-results-from-pages "shakespeare" "powells" "cultura"))
 
     (shutdown-agents)
 )
